@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Project THT and KTTL</h1><br>
+    <h2>Tạo mã học sinh, mã giáo viên</h2><br>
+
+    <form method="POST">
+
+        <input type="radio" id="hs" name="get_info_choice" value="Hoc Sinh" checked>
+        <label for="hs">Học Sinh</label>
+
+        <input type="radio" id="gv" name="get_info_choice" value="Giao Vien">
+        <label for="gv">Giáo Viên</label><br><br>
+
+        Tên Học Sinh/ Giáo Viên: <input type="text" name="name" placeholder="Nguyễn Văn A"><br><br>
+
+        Lớp: <input type="text" name="class" placeholder="6A1"><br><br>
+
+        Email: <input type="text" name="email" placeholder="abc@xyz.com"><br><br>
+
+        <input type="submit" name="button" value="Tạo mã">
+
+    </form><br>
+
+    <p> Mã học sinh / giáo viên: {{key}}</p><br>
+
+    <form method="post">
+
+        <input type="submit" name="button" value="Đổi mật khẩu">
+        <input type="submit" name="button" value="Đăng xuất">
+
+    </form>
+
+
+</body>
+
+</html>
